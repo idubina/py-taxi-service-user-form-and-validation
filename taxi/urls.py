@@ -67,7 +67,7 @@ urlpatterns = [
     path(
         "cars/<int:pk>/assign-me/",
         assign_me_to_car,
-        name="car-assign-me"
+        name="driver-assign-me"
     ),
     path(
         "cars/<int:pk>/remove-me/",

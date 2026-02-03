@@ -22,7 +22,7 @@
         <button class="btn btn-danger link-to-page" type="submit">Delete me from this car</button>
       </form>
     {% else %}
-      <form method="post" action="{% url 'taxi:car-assign-me' object.pk %}">
+      <form method="post" action="{% url 'taxi:driver-assign-me' object.pk %}">
         {% csrf_token %}
         <button class="btn btn-success link-to-page" type="submit">Assign me to this car</button>
       </form>
